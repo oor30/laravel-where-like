@@ -15,8 +15,8 @@ composer require kazuki/laravel-where-like
 ```php
 // Search for Ichiro working in Tokyo
 $words = ['Ichiro', 'Tokyo'];
-$comulns = ['name', 'kana', 'company.address'];
-User::whereLike($columns, $words);
+$comulns = ['name', 'company.address'];
+$users = User::whereLike($columns, $words)->get();
 ```
 
 ## options
@@ -33,5 +33,5 @@ User::whereLike($columns, $words);
 // Search for who working in Tokyo or Osaka
 $words = ['Tokyo', 'Osaka'];
 $comulns = ['company.address'];
-User::whereLike($columns, $words, 0, 'or');
+$users = User::whereLike($columns, $words, 0, 'or')->get();
 ```
