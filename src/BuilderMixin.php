@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mixins;
+namespace Kazuki\LaravelWhereLike;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;

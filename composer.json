@@ -1,0 +1,30 @@
+{
+    "name": "kazuki/laravel-where-like",
+    "description": "Add where like query to laravel eloquent builder.",
+    "type": "library",
+    "license": "MIT",
+    
+    "autoload": {
+        "psr-4": {
+            "Kazuki\\LaravelWhereLike\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "oor30",
+            "email": "kazuki.w.0920@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/database": "^9.0 || ^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kazuki\\LaravelWhereLike\\WhereLikeServiceProvider"
+            ]
+        }
+    }
+}
